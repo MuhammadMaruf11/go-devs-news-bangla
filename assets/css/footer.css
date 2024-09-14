@@ -1,0 +1,138 @@
+/* destop footer css start  */
+.footer-area {
+  /* background: var(--background-color); */
+  background: #fff;
+  padding: 70px 0 30px;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+.footer-title {
+  margin-bottom: 24px;
+}
+
+.footer-description {
+  max-width: 420px;
+  margin-bottom: 24px;
+}
+
+.footer-widget {
+  margin-bottom: 60px;
+}
+
+.footer-widget > h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-widget > h4 i {
+  display: none;
+}
+
+.footer-widget ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.footer-widget ul li {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer-widget ul li a i {
+  transition: all 0.3s linear;
+}
+
+.footer-widget ul li a:hover i {
+  transform: translateX(10px);
+}
+
+.footer-widget a {
+  color: #0c293f;
+  font-size: 14px;
+}
+
+.footer-social {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.footer-social ul li {
+  margin: 0 15px 0 0;
+  display: inline-block;
+}
+
+.footer-social ul li a {
+  color: #303030;
+}
+
+.footer-payment-img {
+  max-width: 350px;
+}
+
+/* destop footer css end  */
+
+/* mobile footer css start  */
+
+.mobile-footer-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background: #fff;
+  z-index: 99;
+}
+
+.mobile-footer-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 4px;
+}
+
+.mobile-footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 4px;
+  border-right: 1px solid #ddcd;
+  padding: 12px 0;
+}
+
+.mobile-footer-items:last-child {
+  border-right: 0;
+}
+
+.mobile-footer-items .item-icon i {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.mobile-footer-items .item-text h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.mobile-footer-items.active .item-icon i {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.mobile-footer-items.active .item-text h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* mobile footer css end  */

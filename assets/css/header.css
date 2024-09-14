@@ -1,0 +1,281 @@
+.header-area {
+  background: #fff;
+}
+
+.header-top {
+  background: #000;
+}
+
+.header-bottom {
+  padding: 15px 0;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99999;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #00000020;
+}
+
+.header-contact ul,
+.header-social ul {
+  list-style: none;
+}
+
+.header-contact ul li,
+.header-social ul li {
+  display: inline-block;
+}
+
+.header-contact ul li,
+.header-social ul li a {
+  color: #fff;
+}
+
+.header-contact ul li {
+  margin-right: 12px;
+}
+
+.header-social ul li {
+  margin-left: 12px;
+}
+
+.header-social ul li a:hover {
+  color: #0088cc;
+  color: var(--primary-color);
+}
+
+.header-logo a {
+  display: inline-block;
+  width: 150px;
+}
+
+.cart-icon,
+.toggle-icon {
+  font-size: 28px;
+}
+
+.main-menu {
+  position: relative;
+}
+.main-menu > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu > ul > li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-menu > ul > li:hover > a {
+  color: #0088cc;
+  color: var(--primary-color);
+}
+
+.main-menu ul > li > a {
+  color: #111111;
+  border: solid transparent;
+  border-width: 2px 0;
+  padding: 15px 0;
+  display: block;
+  position: relative;
+  font-family: "Futura, sans-serif";
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.main-menu ul > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #0088cc;
+  background: var(--primary-color);
+  top: 100%;
+  left: 0;
+  transition: width 0.2s linear;
+}
+
+.main-menu ul > li > a:hover:after {
+  width: 100%;
+}
+
+.sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 1px 0 0 #f0f0f5, 0 1px 2px 0 rgba(0, 0, 0, 0.24),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: opacity 0.3s linear, visibility 0.3s linear;
+  z-index: 5;
+}
+
+.sub-menu.tiny-menu {
+  width: 240px;
+}
+
+.sub-menu.small-menu {
+  width: 480px;
+}
+
+.sub-menu.medium-menu {
+  width: 720px;
+}
+
+.sub-menu.large-menu {
+  width: 856px;
+}
+
+.category-menu {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.category-menu .sub-menu-img {
+  margin-top: 20px;
+  width: 182px;
+  overflow: hidden;
+}
+
+.sub-menu-title {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+}
+
+.sub-menu-list ul {
+  list-style: none;
+}
+
+.main-menu ul li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-menu ul li:hover a {
+  color: #0088cc;
+  color: var(--primary-color);
+}
+
+.sub-menu .sub-menu-right {
+  color: #c7cccf;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #c7cccf;
+  font-family: montserrat, sans-serif;
+}
+
+.sub-menu-right-contents {
+  display: flex;
+  padding: 12px;
+  gap: 12px;
+}
+
+.sub-menu-right-contents:hover {
+  background: #f5fdec;
+}
+
+.sub-menu-right-contents .icon i {
+  margin-top: 4px;
+  font-size: 28px;
+  color: #6fac2f;
+}
+
+.sub-menu-right-contents .text-contents h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.sub-menu-right-contents .text-contents p {
+  color: #949c9e;
+  font-size: 14px;
+}
+
+.header-right {
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-right a {
+  color: #111;
+  font-size: 18px;
+  position: relative;
+}
+
+.header-right a:hover {
+  color: #0088cc;
+  color: var(--primary-color);
+}
+
+.search-product-wrap {
+  position: relative;
+}
+
+.search-toggle-wrap {
+  position: absolute;
+  display: flex;
+  right: -20px;
+  top: 130%;
+  width: max-content;
+  background: #fff;
+  z-index: 99999;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  height: 0;
+}
+
+.search-toggle-wrap.active {
+  height: 58px;
+}
+
+.search-toggle-wrap .form-control {
+  width: 380px;
+}
+
+.search-toggle-wrap .search-btn .btn {
+  min-height: 58px;
+}
+
+.login-wrap {
+  position: relative;
+}
+.login-wrap ul {
+  position: absolute;
+  top: 100%;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 150px;
+  right: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 5px 20px 0 #172c521a;
+  border-top: 1px solid #ececec;
+  transition: opacity 0.2s ease 0.1s, visibility 0.2s ease 0.1s,
+    top 0.2s ease 0.1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login-wrap:hover > ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-wrap ul li a {
+  display: block;
+  padding: 5px 15px;
+}
