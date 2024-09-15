@@ -63,11 +63,6 @@ p {
   hyphens: auto;
 }
 
-hr {
-  margin: 20px 0;
-  border-color: #352323;
-}
-
 /* Base styles for the transition */
 .page-transition {
   opacity: 0;
@@ -89,13 +84,13 @@ img {
 }
 
 section {
-  margin-bottom: var(--section-margin-bottom);
+  padding: 50px 0;
 }
 
 /* Shadow and Outline */
 a {
   text-decoration: none;
-  color: inherit;
+  color: #000;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
@@ -104,6 +99,10 @@ a {
 a:active,
 a:hover {
   text-decoration: none;
+}
+
+a:hover span {
+  text-decoration: underline;
 }
 
 button,
@@ -155,7 +154,7 @@ button:disabled {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .box-shadow {
@@ -171,7 +170,7 @@ h5,
 h6 {
   font-family: "Mukta", sans-serif;
   color: var(--heading-color);
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0;
   line-height: var(--heading-line-height);
 }
@@ -203,11 +202,6 @@ h6 {
 h6 {
   font-size: 18px;
   line-height: 1.2;
-}
-
-hr {
-  margin: 20px 0;
-  border-color: #352323;
 }
 
 ol {

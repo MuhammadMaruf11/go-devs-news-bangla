@@ -59,6 +59,10 @@
   align-items: start;
 }
 
+.header-logo a:hover span {
+  text-decoration: none;
+}
+
 .header-logo a img {
   width: 40%;
 }

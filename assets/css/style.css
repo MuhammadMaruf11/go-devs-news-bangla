@@ -7,32 +7,20 @@
 
 /* default css end here  */
 
-/* default css start here  */
+/* header css start here  */
 
 @import url("./header.css");
 
-/* default css end here  */
+/* header css end here  */
 
-/* default css start here  */
+/* home page css start here  */
 
-@import url("./home-page.css");
+@import url("./main.css");
 
-/* default css end here  */
+/* home page css end here  */
 
-/* default css start here  */
-
-@import url("./sub-pages.css");
-
-/* default css end here  */
-
-/* default css start here  */
-
-@import url("./user-dashboard-pages.css");
-
-/* default css end here  */
-
-/* default css start here  */
+/* footer css start here  */
 
 @import url("./footer.css");
 
-/* default css end here  */
+/* footer css end here  */

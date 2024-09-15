@@ -1,8 +1,16 @@
 /* destop footer css start  */
 .footer-area {
-  /* background: var(--background-color); */
-  background: #fff;
-  padding: 70px 0 30px;
+  background: #222;
+}
+
+.footer-area hr {
+  border-color: #3f3f42;
+  opacity: 1;
+  margin: 0;
+}
+
+.footer-top {
+  background: var(--primary-color);
 }
 
 .footer-logo {
@@ -19,64 +27,33 @@
 }
 
 .footer-widget {
-  margin-bottom: 60px;
-}
-
-.footer-widget > h4 {
-  font-size: 20px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-widget > h4 i {
-  display: none;
+  padding: 24px 0;
 }
 
 .footer-widget ul {
   list-style: none;
-  display: inline-block;
 }
 
 .footer-widget ul li {
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  text-align: left;
   margin-bottom: 15px;
 }
 
-.footer-widget ul li a i {
-  transition: all 0.3s linear;
-}
-
-.footer-widget ul li a:hover i {
-  transform: translateX(10px);
+.footer-widget ul li:last-child {
+  margin-bottom: 0;
 }
 
 .footer-widget a {
-  color: #0c293f;
+  color: #fff;
   font-size: 14px;
+  font-weight: 500;
 }
 
-.footer-social {
-  align-items: center;
-  display: flex;
-  margin-bottom: 24px;
+.footer-copy-right {
+  padding: 24px 0;
 }
 
-.footer-social ul li {
-  margin: 0 15px 0 0;
-  display: inline-block;
-}
-
-.footer-social ul li a {
-  color: #303030;
-}
-
-.footer-payment-img {
-  max-width: 350px;
+.footer-copy-right p {
+  color: #fff;
 }
 
 /* destop footer css end  */
