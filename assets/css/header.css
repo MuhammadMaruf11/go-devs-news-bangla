@@ -97,7 +97,7 @@
 }
 
 .main-menu ul > li > a {
-  color: var(--heading-color);
+  color: var(--text-color);
   border: solid transparent;
   border-width: 2px 0;
   display: block;

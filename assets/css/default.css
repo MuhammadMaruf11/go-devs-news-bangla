@@ -2,12 +2,10 @@
 :root {
   /* Color Palette */
   --primary-color: #b80000;
-  --secondary-color: #ffb200;
-  --text-color: #565656;
-  --heading-color: #141414;
+  --text-color: #141414;
   --background-color: #ebebeb;
   --light-background-color: #f1f1f1;
-  --border-color: rgba(0, 0, 0, 0.15);
+  --border-color: #00000026;
   --old-price-color: #a0a0a0;
   --new-price-color: #08c;
 
@@ -48,7 +46,7 @@
 body {
   color: var(--text-color);
   font-size: 16px;
-  font-family: "Poppins", system-ui;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -168,8 +166,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Mukta", sans-serif;
-  color: var(--heading-color);
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
   font-weight: 500;
   margin-bottom: 0;
   line-height: var(--heading-line-height);
@@ -268,13 +266,13 @@ label {
   color: var(--primary-color) !important;
 }
 
-.text-theme-2 {
-  color: var(--secondary-color) !important;
-}
-
 /* Bg Color */
 .bg-offset {
   background: #f1f2fc;
+}
+
+.bg-theme {
+  background: var(--primary-color);
 }
 
 .bg-gray {
@@ -298,7 +296,7 @@ label {
 }
 
 .bg-dark {
-  background-color: #141414 !important;
+  background-color: var(--text-color) !important;
 }
 
 .bg-off-white {
@@ -390,6 +388,20 @@ label {
 
 .offcanvas {
   z-index: 100000;
+}
+
+.pagination .page-item.active a {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff !important;
+}
+
+.pagination .page-item a:hover {
+  border-color: var(--primary-color);
+}
+
+.pagination .page-item:not(.disabled) a {
+  color: var(--primary-color);
 }
 
 /* Modal Customization */

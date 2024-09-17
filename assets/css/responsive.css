@@ -215,12 +215,6 @@
     border-bottom-color: var(--primary-color);
   }
 
-  .mobile-sub-menu > li.open > a {
-    background-color: var(--secondary-color);
-    color: #000;
-    border-bottom-color: var(--secondary-color);
-  }
-
   .mobile-main-menu > li.open > a > i {
     transform: rotate(180deg);
   }
@@ -515,12 +509,6 @@
     background-color: var(--primary-color);
     color: #ffffff;
     border-bottom-color: var(--primary-color);
-  }
-
-  .mobile-sub-menu > li.open > a {
-    background-color: var(--secondary-color);
-    color: #000;
-    border-bottom-color: var(--secondary-color);
   }
 
   .mobile-main-menu > li.open > a > i {
