@@ -64,7 +64,7 @@
 }
 
 .header-logo a img {
-  width: 40%;
+  width: 42.5%;
 }
 
 .header-logo a span {
@@ -94,6 +94,10 @@
 
 .main-menu > ul > li:hover > a {
   color: var(--primary-color);
+}
+
+.main-menu a:hover span {
+  text-decoration: none;
 }
 
 .main-menu ul > li > a {

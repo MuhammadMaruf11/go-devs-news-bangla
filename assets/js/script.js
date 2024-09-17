@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    // /*-------------------------------------------
-    //     mobile menu 
-    //  --------------------------------------------- */
+    /*-------------------------------------------
+        mobile menu 
+     --------------------------------------------- */
 
 
-    // const toggleBtn = document.querySelector('.toggle-icon');
+    const toggleBtn = document.querySelector('.toggle-icon');
 
-    // toggleBtn.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     document.querySelector('.mobile-menu').classList.toggle('open')
-    //     toggleBtn.classList.toggle('open')
-    // })
+    toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.mobile-menu').classList.toggle('open')
+        toggleBtn.classList.toggle('open')
+    })
 
 
     // document.querySelectorAll('.mobile-main-menu > li > a').forEach(mainMenuItem => {
