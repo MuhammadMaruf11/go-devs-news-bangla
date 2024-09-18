@@ -51,6 +51,10 @@
     padding: 5px;
     gap: 6px;
   }
+
+  .news-title {
+    font-size: 16px;
+  }
 }
 
 /* Tablet Layout wide: 768px. */
@@ -72,18 +76,72 @@
   .info-wrap {
     margin-bottom: 24px;
   }
-  /* footer css  */
 
-  .footer-area {
-    padding: 70px 0 90px;
+  /* main css  */
+
+  .article-wrap {
+    margin-bottom: 20px;
   }
+
+  .other-article-link {
+    font-size: 14px;
+  }
+
+  .article-keyword-wrap {
+    margin: 40px 0 75px;
+  }
+
+  .article-right-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .news-text-wrap h2 {
+    font-size: 36px;
+  }
+
+  .news-headline {
+    font-size: 14px;
+  }
+
+  .article-video-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .article-video-links a {
+    display: block;
+    border: 0;
+  }
+
+  .article-video-links a .news-img.with-video {
+    width: 100%;
+  }
+
+  .article-video-links a img {
+    width: 100%;
+  }
+
+  .news-text h6 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .news-text p {
+    font-size: 14px;
+  }
+
+  /* footer css  */
 
   .footer-title h4 {
     font-size: 20px;
   }
 
-  .footer-widget .footer-description p {
-    font-size: 14px;
+  .footer-copy-right p {
+    font-size: 13px;
   }
 }
 
@@ -95,6 +153,10 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --h4-font-size: 1rem;
+  }
+
+  section {
+    padding: 20px 0;
   }
 
   .header-area {
@@ -112,11 +174,6 @@
 
   .header-bottom {
     padding: 0;
-  }
-
-  .btn {
-    padding: 12px 20px;
-    min-height: max-content;
   }
 
   .toggle-icon {
@@ -260,11 +317,108 @@
     border-bottom-color: var(--primary-color);
   }
 
-  /* footer css  */
+  /* main css  */
 
-  .footer-area {
-    padding: 70px 0 90px;
+  .news-content .news-description {
+    display: none;
   }
+
+  .news-content .news-time {
+    display: none;
+  }
+
+  .news-wrap.sub-news {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .news-wrap.sub-news .news-img {
+    width: 100px;
+  }
+
+  .news-wrap.sub-news .news-content {
+    width: 240px;
+  }
+  .news-wrap .news-title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .news-wrap.sub-news .news-title {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .news-wrap.sub-news .news-time {
+    display: block;
+    font-size: 12px;
+  }
+
+  .news-img .video-item {
+    padding: 2px 4px;
+    column-gap: 8px;
+  }
+
+  .news-img .video-item i {
+    font-size: 12px;
+  }
+
+  .news-text-wrap h2 {
+    font-size: 28px;
+  }
+
+  .news-headline {
+    font-size: 14px;
+  }
+
+  .other-article-link {
+    font-size: 14px;
+  }
+
+  .cto-area .container {
+    background: radial-gradient(
+      circle at 20% 90%,
+      rgb(162, 2, 25),
+      rgb(24, 1, 9) 60%,
+      rgb(80, 1, 21) 90%
+    );
+    position: relative;
+    height: 250px;
+    width: 96%;
+  }
+
+  .cto-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cto-wrap {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cto-title {
+    margin: 30px 0px 120px;
+  }
+
+  .cto-btn {
+    width: 96%;
+    margin-bottom: 0;
+  }
+
+  /* footer css  */
 
   .footer-title h4 {
     font-size: 20px;
@@ -274,39 +428,11 @@
     margin-bottom: 0;
   }
 
-  .footer-widget .footer-description p {
-    font-size: 14px;
+  .footer-widget a {
+    font-size: 12px;
   }
 
-  .footer-widget ul {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s linear, visibility 0.3s linear;
-  }
-
-  .footer-widget.active ul {
-    visibility: visible;
-    opacity: 1;
-    height: 500px;
-    max-height: max-content;
-  }
-
-  .footer-widget > h4 {
-    cursor: pointer;
-    margin-bottom: 0;
-  }
-
-  .footer-widget > h4 i {
-    display: block;
-    transition: all 0.3s linear;
-  }
-
-  .footer-widget.active > h4 {
-    margin-bottom: 24px;
-  }
-  .footer-widget.active > h4 i {
-    transform: rotate(180deg);
+  .footer-copy-right p {
+    font-size: 12px;
   }
 }
